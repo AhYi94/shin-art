@@ -96,22 +96,38 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="#" data-lang="en">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="#" data-lang="cn">主页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="#" data-lang="en">ABOUT US</a>
+                            <a class="nav-link" href="#" data-lang="cn">关于我们</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
+                            <a class="nav-link" href="#" data-lang="en">GALLERY</a>
+                            <a class="nav-link" href="#" data-lang="cn">画廊</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">OUR COURSE</a>
+                            <a class="nav-link" href="#" data-lang="en">OUR COURSE</a>
+                            <a class="nav-link" href="#" data-lang="cn">我们的课程</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ACTIVITIES</a>
+                            <a class="nav-link" href="#" data-lang="en">ACTIVITIES</a>
+                            <a class="nav-link" href="#" data-lang="cn">活动</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT US</a>
+                            <a class="nav-link" href="#" data-lang="en">CONTACT US</a>
+                            <a class="nav-link" href="#" data-lang="cn">联系我们</a>
+                        </li>
+                        <li class="nav-item">
+                            <select id="change-language">
+                                <option value="en" selected="selected">
+                                    English
+                                </option>
+                                <option value="cn">
+                                    中文
+                                </option>
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -134,11 +150,14 @@
     </div>
 
     <div class="container d-block d-md-flex py-5">
-        <div class="my-auto">
-            <div class="h2">
+        <div class="my-auto px-3">
+            <div class="h2" data-lang="en">
                 ABOUT US
             </div>
-            <div>
+            <div class="h2" data-lang="cn">
+                关于我们
+            </div>
+            <div data-lang="en">
                 Shin Art Culinary Academy SACA, is the top culinary
                 in Johor Bahru, most of our lecturer are the top from
                 the industry.
@@ -150,7 +169,15 @@
                 SACA provide a series of way to sharpen you skill and
                 push to the top of the industry.
             </div>
-            <button>MORE</button>
+            <div data-lang="cn">
+                Shin Art Culinary Academy SACA, 是新山最顶级的厨艺学院，我们的讲师大多是业界顶尖的。
+                <br><br>
+                SACA你不只是学习成为一名厨师，而是成为一名专业厨师，具备成为餐厅老板和热情厨师的知识
+                <br><br>
+                SACA 提供了一系列的方法来磨练你的技能并推向行业的顶端。
+            </div>
+            <button data-lang="en">MORE</button>
+            <button data-lang="cn">更多</button>
         </div>
         <div>
             <img src="https://via.placeholder.com/500x500.png" alt="">
@@ -158,23 +185,32 @@
     </div>
 
     <div class="container my-5">
-        <div class="h2">GALLERY</div>
+        <div class="h2" data-lang="en">GALLERY</div>
+        <div class="h2" data-lang="cn">画廊</div>
         <div class="d-block d-md-flex w-100">
             <div class="text-start w-100">
                 <img src="https://via.placeholder.com/600x500.png" alt="">
                 <div class="text-center">
-                    <div>Food</div>
-                    <div>Fine Dine Styling</div>
-                    <button>MORE</button>
+                    <div data-lang="en">Food</div>
+                    <div data-lang="en">Fine Dine Styling</div>
+                    <button data-lang="en">MORE</button>
+
+                    <div data-lang="cn">食物</div>
+                    <div data-lang="cn">美食造型</div>
+                    <button data-lang="cn">更多</button>
                 </div>
             </div>
 
             <div class="text-end w-100">
                 <img src="https://via.placeholder.com/600x500.png" alt="">
                 <div class="text-center">
-                    <div>Academy</div>
-                    <div>Shin Art Academy Interior</div>
-                    <button>MORE</button>
+                    <div data-lang="en">Academy</div>
+                    <div data-lang="en">Shin Art Academy Interior</div>
+                    <button data-lang="en">MORE</button>
+
+                    <div data-lang="cn">学院</div>
+                    <div data-lang="cn">新艺术学院内部</div>
+                    <button data-lang="cn">更多</button>
                 </div>
             </div>
         </div>
@@ -279,7 +315,8 @@
                 </ul>
             </div>
             <div class="social">
-                <div>Social Media Link</div>
+                <div data-lang="en">Social Media Link</div>
+                <div data-lang="cn">社交媒体链接</div>
                 <a href="#"><img src="https://via.placeholder.com/50x50.png" alt=""></a>
                 <a href="#"><img src="https://via.placeholder.com/50x50.png" alt=""></a>
                 <a href="#"><img src="https://via.placeholder.com/50x50.png" alt=""></a>
@@ -299,6 +336,8 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/i18n-language@1.0.8/i18n-language.min.js"></script>
+
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
