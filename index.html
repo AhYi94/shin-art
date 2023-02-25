@@ -27,7 +27,7 @@
 
         .swiper {
             width: 100%;
-            height: 50%;
+            height: 70%;
         }
 
         .swiper-slide {
@@ -74,11 +74,23 @@
         .social img {
             width: 50px;
         }
+
+        .gallery-img-size{
+            height: 500px;
+        }
+
+        .course-container img{
+            height: 500px;
+        }
+
+        .primary-bg-gradient {
+            background: linear-gradient(to right, #262160, #b41f31);
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg primary-bg-gradient">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="https://via.placeholder.com/200x50.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -136,15 +148,15 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide"><img src="assets/img/slide/1.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/2.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/3.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/4.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/5.png" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/6.jpg" alt="" srcset=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/slide/7.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/8.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="assets/img/slide/9.jpg" alt="" srcset=""></div> -->
         </div>
         <div class="swiper-pagination"></div>
     </div>
@@ -180,7 +192,7 @@
             <button data-lang="cn">更多</button>
         </div>
         <div>
-            <img src="https://via.placeholder.com/500x500.png" alt="">
+            <img src="assets/img/about/about.png" alt="">
         </div>
     </div>
 
@@ -189,7 +201,7 @@
         <div class="h2" data-lang="cn">画廊</div>
         <div class="d-block d-md-flex w-100">
             <div class="text-start w-100">
-                <img src="https://via.placeholder.com/600x500.png" alt="">
+                <img class="gallery-img-size" src="assets/img/food/C1.png" alt="">
                 <div class="text-center">
                     <div data-lang="en">Food</div>
                     <div data-lang="en">Fine Dine Styling</div>
@@ -202,7 +214,7 @@
             </div>
 
             <div class="text-end w-100">
-                <img src="https://via.placeholder.com/600x500.png" alt="">
+                <img class="gallery-img-size" src="assets/img/academy/IMG_5400 2.png" alt="">
                 <div class="text-center">
                     <div data-lang="en">Academy</div>
                     <div data-lang="en">Shin Art Academy Interior</div>
@@ -221,8 +233,8 @@
         <div>Certified by proffesional certificate</div>
         <div class="d-block d-md-flex justify-content-between text-center">
             <div>
-                <div>
-                    <img src="https://via.placeholder.com/400x500.png" alt="">
+                <div class="course-container">
+                    <img src="assets/img/courses/1.jpg" alt="">
                     <div>CHINESE COOKING COURSE</div>
                 </div>
                 <button>MORE</button>
@@ -233,8 +245,8 @@
             </div>
 
             <div>
-                <div>
-                    <img src="https://via.placeholder.com/400x500.png" alt="">
+                <div class="course-container">
+                    <img src="assets/img/courses/2.jpg" alt="">
                     <div>WESTERN COOKING COURSE</div>
                 </div>
                 <button>MORE</button>
@@ -245,8 +257,8 @@
             </div>
 
             <div>
-                <div>
-                    <img src="https://via.placeholder.com/400x500.png" alt="">
+                <div class="course-container">
+                    <img src="assets/img/courses/3.jpg" alt="">
                     <div>PASTRY COOKING COURSE</div>
                 </div>
                 <button>MORE</button>
