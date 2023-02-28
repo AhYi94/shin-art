@@ -78,8 +78,7 @@
 
         .gallery-img-size {
             height: 400px;
-            border-radius: 15%;
-            padding: 0 3rem;
+            border-radius: 30px;
         }
 
         .course-container img {
@@ -115,6 +114,12 @@
             width: 40%;
         }
 
+        @media screen and (max-width: 992px) {
+            .contact-form {
+                width: 100%;
+            }
+        }
+
         .contact-us {
             background: linear-gradient(220deg, #262160 80%, #b41f31);
             color: #fff;
@@ -128,7 +133,7 @@
         }
 
         .text-gradient-course {
-            background: -webkit-linear-gradient(#b41f31 ,#262160);
+            background: -webkit-linear-gradient(#b41f31, #262160);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -151,7 +156,7 @@
             padding: 5px 30px;
             font-size: 16px;
             background: #fff;
-            color: #1470b6;  
+            color: #1470b6;
             font-weight: bold;
             margin: 0.5rem 0;
         }
@@ -171,6 +176,16 @@
             border: none;
             border: solid 1px #ccc;
             border-radius: 15px;
+        }
+
+        .btn-submit {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 992px) {
+            .btn-submit {
+                width: auto;
+            }
         }
     </style>
 </head>
@@ -289,7 +304,7 @@
             <div class="h2" data-lang="en">GALLERY</div>
             <div class="h2" data-lang="cn">画廊</div>
             <div class="d-block d-md-flex w-100">
-                <div class="text-start w-100">
+                <div class="text-start w-100 p-3">
                     <img class="gallery-img-size" src="assets/img/food/C1.png" alt="">
                     <div class="text-center">
                         <div data-lang="en">Food</div>
@@ -302,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="text-end w-100">
+                <div class="text-end w-100 p-3">
                     <img class="gallery-img-size" src="assets/img/academy/IMG_5400 2.png" alt="">
                     <div class="text-center">
                         <div data-lang="en">Academy</div>
@@ -402,18 +417,18 @@
 
                 <div class="text-start text-md-end contact-form">
                     <form action="" class="d-block d-md-flex flex-column" data-lang="en">
-                        <input data-lang="en" type="text" class="my-2 p-2 border-radius" name="" id=""
+                        <input data-lang="en" type="text" class="my-2 p-2 border-radius col-12" name="" id=""
                             placeholder="Write your Email here ">
-                        <input data-lang="en" type="text" class="my-2 p-2 border-radius" name="" id=""
+                        <input data-lang="en" type="text" class="my-2 p-2 border-radius col-12" name="" id=""
                             placeholder="Write your Phone Number here">
-                        <textarea data-lang="en" class="my-2 p-2 border-radius" rows="4" cols="30"
+                        <textarea data-lang="en" class="my-2 p-2 border-radius col-12" rows="4" cols="30"
                             placeholder="Write your enquiry here "></textarea>
-                        <button data-lang="en" class="w-25 gradient-button-white">Submit</button>
+                        <button data-lang="en" class="btn-submit gradient-button-white">Submit</button>
 
-                        <input data-lang="cn" type="text" class="my-2 p-2" name="" id="" placeholder="在这里写你的电子邮件">
-                        <input data-lang="cn" type="text" class="my-2 p-2" name="" id="" placeholder="在这里写下您的电话号码">
-                        <textarea data-lang="cn" class="my-2 p-2" rows="4" cols="30" placeholder="在这里写下您的询问"></textarea>
-                        <button data-lang="cn" class="w-25 gradient-button-white">提交</button>
+                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id="" placeholder="在这里写你的电子邮件">
+                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id="" placeholder="在这里写下您的电话号码">
+                        <textarea data-lang="cn" class="my-2 p-2 border-radius col-12" rows="4" cols="30" placeholder="在这里写下您的询问"></textarea>
+                        <button data-lang="cn" class="btn-submit gradient-button-white">提交</button>
                     </form>
                 </div>
             </div>
@@ -468,7 +483,7 @@
 
 
         <div class="text-center">
-            Copyright © 2022 SHIN ART ACADEMY. All rights reserved
+            Copyright © 2023 SHIN ART ACADEMY. All rights reserved
         </div>
     </footer>
 
