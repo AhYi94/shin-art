@@ -187,6 +187,41 @@
                 width: auto;
             }
         }
+
+        footer .h5 {
+            font-weight: bold;
+        }
+
+        footer li {
+            line-height: 2.5;
+        }
+
+        footer .social img {
+            padding: 0 1%;
+        }
+
+        .course .desc {
+            color: #6c6d70;
+            font-size: 1.3rem;
+        }
+
+        .gallery .desc {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .about-text {
+            font-size: 1.3rem;
+        }
+
+        .nav-item{
+            margin: 0 1%;
+        }
+
+        .nav-item a {
+            font-size: 1rem;
+            transform:scale(1,1.5);
+        }
     </style>
 </head>
 
@@ -291,8 +326,8 @@
                 <br><br>
                 SACA 提供了一系列的方法来磨练你的技能并推向行业的顶端。
             </div>
-            <button class="gradient-button-main" data-lang="en">MORE</button>
-            <button class="gradient-button-main" data-lang="cn">更多</button>
+            <button class="gradient-button-main my-3" data-lang="en">MORE</button>
+            <button class="gradient-button-main my-3" data-lang="cn">更多</button>
         </div>
         <div class="course-container">
             <img src="assets/img/about/about.png" alt="">
@@ -306,26 +341,26 @@
             <div class="d-block d-md-flex w-100">
                 <div class="text-start w-100 p-3">
                     <img class="gallery-img-size" src="assets/img/food/C1.png" alt="">
-                    <div class="text-center">
-                        <div data-lang="en">Food</div>
-                        <div data-lang="en">Fine Dine Styling</div>
+                    <div class="text-center py-3">
+                        <div class="fw-bold fs-4" data-lang="en">Food</div>
+                        <div class="desc" data-lang="en">Fine Dine Styling</div>
                         <button class="gradient-button-white" data-lang="en">MORE</button>
 
-                        <div data-lang="cn">食物</div>
-                        <div data-lang="cn">美食造型</div>
+                        <div class="fw-bold fs-4" data-lang="cn">食物</div>
+                        <div class="desc" data-lang="cn">美食造型</div>
                         <button class="gradient-button-white" data-lang="cn">更多</button>
                     </div>
                 </div>
 
                 <div class="text-end w-100 p-3">
                     <img class="gallery-img-size" src="assets/img/academy/IMG_5400 2.png" alt="">
-                    <div class="text-center">
-                        <div data-lang="en">Academy</div>
-                        <div data-lang="en">Shin Art Academy Interior</div>
+                    <div class="text-center py-3">
+                        <div class="fw-bold fs-4" data-lang="en">Academy</div>
+                        <div class="desc" data-lang="en">Shin Art Academy Interior</div>
                         <button class="gradient-button-white" data-lang="en">MORE</button>
 
-                        <div data-lang="cn">学院</div>
-                        <div data-lang="cn">新艺术学院内部</div>
+                        <div class="fw-bold fs-4" data-lang="cn">学院</div>
+                        <div class="desc" data-lang="cn">新艺术学院内部</div>
                         <button class="gradient-button-white" data-lang="cn">更多</button>
                     </div>
                 </div>
@@ -339,7 +374,7 @@
         <div data-lang="en">Certified by professional certificate</div>
         <div data-lang="cn">专业证书认证</div>
         <div class="d-block d-md-flex justify-content-between text-center">
-            <div>
+            <div class="course">
                 <div class="course-container">
                     <img src="assets/img/courses/2.jpeg" alt="">
                     <div class="course-text" data-lang="en">CHINESE COOKING COURSE</div>
@@ -347,17 +382,17 @@
                 </div>
                 <button class="gradient-button-main" data-lang="en">MORE</button>
                 <button class="gradient-button-main" data-lang="cn">更多</button>
-                <div data-lang="en">
+                <div class="desc" data-lang="en">
                     9 Months Practical & Theory <br>
                     6 Months intern
                 </div>
-                <div data-lang="cn">
+                <div class="desc" data-lang="cn">
                     9个月实践与理论 <br>
                     6个月实习生
                 </div>
             </div>
 
-            <div>
+            <div class="course">
                 <div class="course-container">
                     <img src="assets/img/courses/1.jpeg" alt="">
                     <div class="course-text" data-lang="en">WESTERN COOKING COURSE</div>
@@ -365,17 +400,17 @@
                 </div>
                 <button class="gradient-button-main" data-lang="en">MORE</button>
                 <button class="gradient-button-main" data-lang="cn">更多</button>
-                <div data-lang="en">
+                <div class="desc" data-lang="en">
                     9 Months Practicle & Theory <br>
                     6 Months intern
                 </div>
-                <div data-lang="cn">
+                <div class="desc" data-lang="cn">
                     9个月实践与理论 <br>
                     6个月实习生
                 </div>
             </div>
 
-            <div>
+            <div class="course">
                 <div class="course-container">
                     <img src="assets/img/courses/3.jpeg" alt="">
                     <div class="course-text" data-lang="en">PASTRY COOKING COURSE</div>
@@ -383,11 +418,11 @@
                 </div>
                 <button class="gradient-button-main" data-lang="en">MORE</button>
                 <button class="gradient-button-main" data-lang="cn">更多</button>
-                <div data-lang="en">
+                <div class="desc" data-lang="en">
                     9 Months Practicle & Theory <br>
                     6 Months intern
                 </div>
-                <div data-lang="cn">
+                <div class="desc" data-lang="cn">
                     9个月实践与理论 <br>
                     6个月实习生
                 </div>
@@ -401,17 +436,17 @@
             <div class="h2" data-lang="cn">联系我们</div>
             <div class="container d-block d-md-flex justify-content-between px-3">
                 <div class="fs-6">
-                    SHIN DELERA SDN BHD
+                    <span class="fw-bold">SHIN DELERA SDN BHD</span>
                     <br><br>
                     R&F Mall, Lot 2-155, Mercu 1, <br>
                     Jalan Tanjung Puteri 1, R&F,<br>
                     Tanjung Puteri 80300 Johor Bahru,<br>
                     Johor, Malaysia
                     <br><br>
-                    Whatsapp<br>
+                    <span class="fw-bold">Whatsapp</span><br>
                     +60 11-1213 9014
                     <br><br>
-                    Email<br>
+                    <span class="fw-bold">Email</span><br>
                     hello@shinacademy.com
                 </div>
 
@@ -421,13 +456,16 @@
                             placeholder="Write your Email here ">
                         <input data-lang="en" type="text" class="my-2 p-2 border-radius col-12" name="" id=""
                             placeholder="Write your Phone Number here">
-                        <textarea data-lang="en" class="my-2 p-2 border-radius col-12" rows="4" cols="30"
+                        <textarea data-lang="en" class="my-2 p-2 border-radius col-12" rows="6" cols="30"
                             placeholder="Write your enquiry here "></textarea>
                         <button data-lang="en" class="btn-submit gradient-button-white">Submit</button>
 
-                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id="" placeholder="在这里写你的电子邮件">
-                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id="" placeholder="在这里写下您的电话号码">
-                        <textarea data-lang="cn" class="my-2 p-2 border-radius col-12" rows="4" cols="30" placeholder="在这里写下您的询问"></textarea>
+                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id=""
+                            placeholder="在这里写你的电子邮件">
+                        <input data-lang="cn" type="text" class="my-2 p-2 border-radius col-12" name="" id=""
+                            placeholder="在这里写下您的电话号码">
+                        <textarea data-lang="cn" class="my-2 p-2 border-radius col-12" rows="6" cols="30"
+                            placeholder="在这里写下您的询问"></textarea>
                         <button data-lang="cn" class="btn-submit gradient-button-white">提交</button>
                     </form>
                 </div>
